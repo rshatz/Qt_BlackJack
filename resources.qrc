@@ -1,5 +1,58 @@
 <RCC>
     <qresource prefix="/">
         <file>table.jpg</file>
+        <file>Cards/_Back.png</file>
+        <file>Cards/Clubs 1.png</file>
+        <file>Cards/Clubs 2.png</file>
+        <file>Cards/Clubs 3.png</file>
+        <file>Cards/Clubs 4.png</file>
+        <file>Cards/Clubs 5.png</file>
+        <file>Cards/Clubs 6.png</file>
+        <file>Cards/Clubs 7.png</file>
+        <file>Cards/Clubs 8.png</file>
+        <file>Cards/Clubs 9.png</file>
+        <file>Cards/Clubs 10.png</file>
+        <file>Cards/Clubs 11.png</file>
+        <file>Cards/Clubs 12.png</file>
+        <file>Cards/Clubs 13.png</file>
+        <file>Cards/Diamonds 1.png</file>
+        <file>Cards/Diamonds 2.png</file>
+        <file>Cards/Diamonds 3.png</file>
+        <file>Cards/Diamonds 4.png</file>
+        <file>Cards/Diamonds 5.png</file>
+        <file>Cards/Diamonds 6.png</file>
+        <file>Cards/Diamonds 7.png</file>
+        <file>Cards/Diamonds 8.png</file>
+        <file>Cards/Diamonds 9.png</file>
+        <file>Cards/Diamonds 10.png</file>
+        <file>Cards/Diamonds 11.png</file>
+        <file>Cards/Diamonds 12.png</file>
+        <file>Cards/Diamonds 13.png</file>
+        <file>Cards/Hearts 1.png</file>
+        <file>Cards/Hearts 2.png</file>
+        <file>Cards/Hearts 3.png</file>
+        <file>Cards/Hearts 4.png</file>
+        <file>Cards/Hearts 5.png</file>
+        <file>Cards/Hearts 6.png</file>
+        <file>Cards/Hearts 7.png</file>
+        <file>Cards/Hearts 8.png</file>
+        <file>Cards/Hearts 9.png</file>
+        <file>Cards/Hearts 10.png</file>
+        <file>Cards/Hearts 11.png</file>
+        <file>Cards/Hearts 12.png</file>
+        <file>Cards/Hearts 13.png</file>
+        <file>Cards/Spades 1.png</file>
+        <file>Cards/Spades 2.png</file>
+        <file>Cards/Spades 3.png</file>
+        <file>Cards/Spades 4.png</file>
+        <file>Cards/Spades 5.png</file>
+        <file>Cards/Spades 6.png</file>
+        <file>Cards/Spades 7.png</file>
+        <file>Cards/Spades 8.png</file>
+        <file>Cards/Spades 9.png</file>
+        <file>Cards/Spades 10.png</file>
+        <file>Cards/Spades 11.png</file>
+        <file>Cards/Spades 12.png</file>
+        <file>Cards/Spades 13.png</file>
     </qresource>
 </RCC>
