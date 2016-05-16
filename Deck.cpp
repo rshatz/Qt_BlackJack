@@ -1,7 +1,9 @@
 #include "Deck.h"
+#include <ctime>
 
 Deck::Deck()
 {
+    srand(std::time(0));
     cards.push_back(QImage(":/Cards/Clubs 1.png"));
     cards.push_back(QImage(":/Cards/Clubs 2.png"));
     cards.push_back(QImage(":/Cards/Clubs 3.png"));
@@ -60,42 +62,35 @@ Deck::Deck()
 
 void Deck::shuffle()
 {
-    //emptyDeck(); // Empty the deck so new cards can be added.
-    QVector<QImage> vect;
+    emptyDeck(); // Empty the deck so new cards can be added.
 
     QVector<QImage>::const_iterator icards;
     for(icards = cards.begin(); icards != cards.end(); icards++) {
-        vect.push_back(*icards);
+        deck.push_back(*icards);
     }
 
-    std::random_shuffle(vect.begin(), vect.end());
-
-    QVector<QImage>::const_iterator ivect = vect.begin();
-    while(ivect != vect.end()) {
-        deck.push_back(*ivect);
-        ivect++;
-    }
+    std::random_shuffle(deck.begin(), deck.end());
     // for testing only
     for(int i = 0; i < 52; i++) {
         c[i] = new QLabel;
-        c[i]->setPixmap(QPixmap::fromImage(vect.at(i)));
+        c[i]->setPixmap(QPixmap::fromImage(deck.at(i)));
         c[i]->show();
     }
 }
 
-//QString& Deck::popCard()
-//{
-//    if(deck.empty()) {
-//        shuffle();
-//    }
-//    QString& temp = deck.front();
-//    deck.pop_front();
-//    return temp;
-//}
+QImage& Deck::popCard()
+{
+    if(deck.empty()) {
+        shuffle();
+    }
+    QImage& temp = deck.front();
+    deck.pop_front();
+    return temp;
+}
 
-//void Deck::emptyDeck() {
+void Deck::emptyDeck() {
 
-//    while(!(deck.empty())) {
-//        deck.pop_front();
-//    }
-//}
+    while(!(deck.empty())) {
+        deck.pop_front();
+    }
+}

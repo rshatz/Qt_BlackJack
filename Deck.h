@@ -1,7 +1,7 @@
 #ifndef DECK_H
 #define DECK_H
 
-#include <QDebug>
+#include <QDebug>  // for testing
 
 #include <QQueue>
 #include <QVector>
@@ -24,7 +24,7 @@ private:
     QVector<QImage> cards;
     QQueue<QImage> deck;
 
-    QLabel* c[52];
+    QLabel* c[52]; // for testing only
 };
 
 #endif // DECK_H
