@@ -20,6 +20,7 @@ public:
 private:
 
     void emptyDeck(); // Empty the deck so new cards can be added
+    void populateDeck(); // Populate the deck with cards
 
     QVector<QImage> cards;
     QQueue<QImage> deck;

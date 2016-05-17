@@ -1,13 +1,13 @@
-//#include "Player.h"
+#include "Player.h"
 
-//void Player::pushCard(const QString card)
-//{
-//    hand.push_back(card);
-//    tallyHand(card);
-//}
+void Player::pushCard(const QImage card)
+{
+    hand.push_back(card);
+    tallyHand(card);
+}
 
-//void Player::tallyHand(const QString card)
-//{
+void Player::tallyHand(const QImage card)
+{
 //    QMap<QString, int>::const_iterator imap;
 //    imap = cards.find(card);
 
@@ -21,12 +21,7 @@
 //        handTotal -= 10; // Ace now is equal to 1.
 //        --aceCount;
 //    }
-//}
-
-//void Player::hideCard() const
-//{
-
-//}
+}
 
 //void Player::showHand() const
 //{

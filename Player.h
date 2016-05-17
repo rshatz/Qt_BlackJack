@@ -2,7 +2,8 @@
 #define PLAYER_H
 
 #include <QString>
-#include <QList>
+#include <QVector>
+#include <QImage>
 #include <QMap>
 
 class Player
@@ -16,9 +17,8 @@ public:
         , aceCount(0) {}
 
     void placeBet(const int placedBet) { bet = placedBet; }
-    void pushCard(const QString card);
+    void pushCard(const QImage card);
     void showHand() const; // Show all cards in players hand.
-    void hideCard() const; // Show first card with second card hidden.
     void win(); // Adds bet to account.
     void lose(); // Subtracts bet from.
     void clearHand(); // Clear cards from player's hand and resets handTotal to 0.
@@ -27,7 +27,7 @@ public:
 
 private:
 
-    void tallyHand(const QString card);
+    void tallyHand(const QImage card);
 
     const QMap<QString, int> cards = { // Hearts
                                       {"AH", 11}, {"2H", 2}, {"3H", 3}, {"4H", 4}, {"5H", 5}
@@ -47,7 +47,7 @@ private:
                                      ,{"JC", 10}, {"QC", 10}, {"KC", 10}
                                    };
 
-    QList<QString> hand;
+    QVector<QImage> hand;
 
     int handTotal;  // Numerical value of player's hand.
     int balance;    // Players total chips.
